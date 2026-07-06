@@ -4,7 +4,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  padding: 3rem 1.5rem;
+  padding: 1.5rem 1.5rem 3rem;
   background: var(--bg-soft);
 }
 
@@ -17,6 +17,8 @@
 .verify-section {
   width: 100%;
   max-width: 460px;
+  padding: 2rem 0;
+  margin: 0 auto;
 }
 
 .verify-card {
