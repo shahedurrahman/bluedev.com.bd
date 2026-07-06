@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Member Verification — BlueDEV</title>
+<meta name="description" content="Verify BlueDEV member identity using their unique QR code ID.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&display=swap">
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="verify.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar">
+    <a href="../" class="logo">blue<span>DEV</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../#what-we-do">what we do</a></li>
+      <li><a href="../#solutions">solutions</a></li>
+      <li><a href="../#why">why bluedev</a></li>
+      <li><a href="../#stack">tech stack</a></li>
+      <li><a href="../#contact">contact</a></li>
+    </ul>
+    <a href="../#contact" class="btn btn-nav">Get In Touch</a>
+  </nav>
+</header>
+
+<main class="verify-page" id="top">
+  <section class="verify-section">
+    <div class="verify-card reveal" id="memberCard">
+
+      <!-- Found state -->
+      <div id="foundState">
+        <div class="verify-photo-wrap">
+          <img id="memberPhoto" src="" alt="" class="verify-photo">
+        </div>
+        <p class="eyebrow">Member Verification</p>
+        <h1 class="verify-name" id="memberName"></h1>
+        <p class="verify-id-label" id="memberIdLabel"></p>
+        <div class="verify-badge" id="memberBadge"></div>
+        <p class="verify-note">This member has been verified by BlueDEV Limited.</p>
+      </div>
+
+      <!-- Not found state -->
+      <div id="notFoundState" hidden>
+        <div class="verify-notfound-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        </div>
+        <p class="eyebrow">Verification Failed</p>
+        <h2 class="verify-notfound-heading">Member Not Found</h2>
+        <p class="verify-notfound-sub">This ID does not match our records. Please <a href="../#contact">contact us</a> if you believe this is an error.</p>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <a href="../" class="logo">blue<span>DEV</span></a>
+  <p>&copy; <span id="year"></span> BlueDEV Limited. All rights reserved.</p>
+</footer>
+
+<script src="../script.js"></script>
+<script src="verify.js"></script>
+</body>
+</html>

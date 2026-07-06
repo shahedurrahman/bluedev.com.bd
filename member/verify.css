@@ -1,0 +1,148 @@
+/* Verify page layout */
+.verify-page {
+  min-height: calc(100vh - 140px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 3rem 1.5rem;
+  background: var(--bg-soft);
+}
+
+@media (max-width: 760px) {
+  .verify-page {
+    padding: 1.5rem 1rem;
+  }
+}
+
+.verify-section {
+  width: 100%;
+  max-width: 460px;
+}
+
+.verify-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  padding: 2.5rem 2rem;
+  text-align: center;
+}
+
+/* Photo */
+.verify-photo-wrap {
+  margin: 0 auto 1.5rem;
+  width: 120px;
+  height: 120px;
+}
+
+.verify-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--blue-100);
+}
+
+/* Member info */
+.verify-name {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--blue-700);
+  margin: 0.25rem 0 0.5rem;
+  line-height: 1.3;
+}
+
+.verify-id-label {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.82rem;
+  color: var(--ink-faint);
+  margin: 0 0 1.25rem;
+  letter-spacing: 0.05em;
+}
+
+/* Status badge */
+.verify-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  margin-bottom: 1.5rem;
+}
+
+.verify-badge svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.badge-active {
+  background: #e8f8f2;
+  color: #129a72;
+}
+
+.badge-inactive {
+  background: #fdecea;
+  color: #e53935;
+}
+
+/* Verify note */
+.verify-note {
+  font-size: 0.82rem;
+  color: var(--ink-faint);
+  margin: 0;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+}
+
+/* Not found state */
+.verify-notfound-icon {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 1.5rem;
+  background: #fdecea;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e53935;
+}
+
+.verify-notfound-icon svg {
+  width: 36px;
+  height: 36px;
+}
+
+.verify-notfound-heading {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--blue-700);
+  margin: 0.25rem 0 0.75rem;
+}
+
+.verify-notfound-sub {
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+.verify-notfound-sub a {
+  color: var(--blue-600);
+  font-weight: 600;
+}
+
+.verify-notfound-sub a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 520px) {
+  .verify-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .verify-name {
+    font-size: 1.3rem;
+  }
+}
