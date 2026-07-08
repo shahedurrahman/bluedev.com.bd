@@ -5,9 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Member Verification — BlueDEV</title>
 <meta name="description" content="Verify BlueDEV member identity using their unique QR code ID.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%231B5CC4'/%3E%3Cpath d='M11.2 7.5v17' stroke='%23fff' stroke-width='3' stroke-linecap='round'/%3E%3Cpath d='M11.2 7.5h4.3a4.2 4.2 0 0 1 0 8.4h-4.3' stroke='%23fff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3Cpath d='M11.2 15.9h5.3a4.3 4.3 0 0 1 0 8.6h-5.3' stroke='%23A8C8F5' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,340..640;1,9..144,340..640&family=Inter:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="verify.css">
 </head>
@@ -15,18 +16,33 @@
 
 <header class="site-header">
   <nav class="navbar">
-    <a href="../" class="logo">blue<span>DEV</span></a>
+    <a href="../" class="logo" aria-label="BlueDEV home">
+      <svg class="logo-mark" viewBox="0 0 32 32" width="30" height="30" aria-hidden="true">
+        <defs>
+          <linearGradient id="bdlgA" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#1F63CE"/>
+            <stop offset="1" stop-color="#0C2038"/>
+          </linearGradient>
+        </defs>
+        <rect width="32" height="32" rx="9" fill="url(#bdlgA)"/>
+        <path d="M11.2 7.5v17" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+        <path d="M11.2 7.5h4.3a4.2 4.2 0 0 1 0 8.4h-4.3" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <path d="M11.2 15.9h5.3a4.3 4.3 0 0 1 0 8.6h-5.3" stroke="#A8C8F5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      </svg>
+      <span class="logo-word">Blue<b>DEV</b></span>
+    </a>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="navLinks">
-      <li><a href="../#what-we-do">what we do</a></li>
-      <li><a href="../#solutions">solutions</a></li>
-      <li><a href="../#why">why bluedev</a></li>
-      <li><a href="../#stack">tech stack</a></li>
-      <li><a href="../#contact">contact</a></li>
+      <li><a href="../#what-we-do">What we do</a></li>
+      <li><a href="../#solutions">Solutions</a></li>
+      <li><a href="../#why">Why BlueDEV</a></li>
+      <li><a href="../#stack">Technology</a></li>
+      <li><a href="../#about">About</a></li>
+      <li class="nav-contact-link"><a href="../#contact">Contact</a></li>
     </ul>
-    <a href="../#contact" class="btn btn-nav">Get In Touch</a>
+    <a href="../#contact" class="btn btn-nav">Get in touch</a>
   </nav>
 </header>
 
@@ -61,8 +77,18 @@
 </main>
 
 <footer class="site-footer">
-  <a href="../" class="logo">blue<span>DEV</span></a>
-  <p>&copy; <span id="year"></span> BlueDEV Limited. All rights reserved.</p>
+  <div class="container footer-inner">
+    <a href="../" class="logo" aria-label="BlueDEV home">
+      <svg class="logo-mark" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true">
+        <rect width="32" height="32" rx="9" fill="#1F63CE"/>
+        <path d="M11.2 7.5v17" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+        <path d="M11.2 7.5h4.3a4.2 4.2 0 0 1 0 8.4h-4.3" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <path d="M11.2 15.9h5.3a4.3 4.3 0 0 1 0 8.6h-5.3" stroke="#A8C8F5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      </svg>
+      <span class="logo-word">Blue<b>DEV</b></span>
+    </a>
+    <p>&copy; <span id="year"></span> BlueDEV Limited. All rights reserved.</p>
+  </div>
 </footer>
 
 <script src="../script.js"></script>
